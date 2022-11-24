@@ -23,6 +23,8 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 router = DefaultRouter()
 router.register("courses", views.CourseView, basename="courses")
 router.register("students", views.StudentView, basename="students")
+router.register("batches", views.BatchView, basename="batches")
+router.register("users", views.UserView, basename="users")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
